@@ -6,7 +6,15 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        // return view('welcome_message');
-        return view('login');
+        return view('welcome_message');
+    }
+    public function getMitra()
+    {
+        return view('mitra'); 
+    }
+
+    public function getBlog()
+    {
+        return view('blog'); 
     }
 }

@@ -1,10 +1,10 @@
-<!-- app/Views/auth/login.php -->
+<!-- app/Views/nasabah/login.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Admin - Bank Sampah</title>
+    <title>Login Nasabah - Bank Sampah</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -24,19 +24,19 @@
             border: none;
         }
         .card-header {
-            background-color: #4e73df;
+            background-color: #1cc88a;
             color: white;
             text-align: center;
             padding: 1.5rem;
             border-radius: 10px 10px 0 0 !important;
         }
-        .btn-primary {
-            background-color: #4e73df;
-            border-color: #4e73df;
+        .btn-success {
+            background-color: #1cc88a;
+            border-color: #1cc88a;
         }
-        .btn-primary:hover {
-            background-color: #2e59d9;
-            border-color: #2e59d9;
+        .btn-success:hover {
+            background-color: #169b6b;
+            border-color: #169b6b;
         }
     </style>
 </head>
@@ -45,7 +45,7 @@
         <div class="login-container">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="mb-0"><i class="fas fa-user-shield me-2"></i>Login Admin</h4>
+                    <h4 class="mb-0"><i class="fas fa-user me-2"></i>Login Nasabah</h4>
                 </div>
                 <div class="card-body p-4">
                     <?php if(session()->getFlashdata('error')): ?>
@@ -55,23 +55,24 @@
                         </div>
                     <?php endif; ?>
                     
-                    <form action="<?= base_url('login') ?>" method="post">
-                    <input type="hidden" name="login_type" value="admin">
+                    <form action="<?= base_url('nasabah/login') ?>" method="post">
+
+
                         <div class="mb-3">
-                            <label for="nia" class="form-label">NIA (Nomor Induk Admin)</label>
-                            <input type="text" class="form-control" id="nia" name="nia" required>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-success">Login</button>
                         </div>
                     </form>
                     
                     <div class="text-center mt-3">
-                        <a href="<?= base_url('nasabah/login') ?>" class="text-decoration-none">Login sebagai Nasabah</a>
+                        <a href="<?= base_url('login/admin') ?>" class="text-decoration-none">Login sebagai Admin</a>
                     </div>
                 </div>
             </div>
