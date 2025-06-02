@@ -135,6 +135,15 @@
             font-size: 24px;
         }
         
+        /* waste item text */
+        .waste-item a {
+        text-decoration: none !important;
+        }
+
+        .waste-item a h3 {
+        text-decoration: none;
+        }
+
 /* Hero Section */
 .hero {
     background: url('/public/image/heC:\xampp\htdocs\banksampah\public\image\heroes.jpgroes.jpg') no-repeat center center/cover;
@@ -726,28 +735,28 @@
         <div class="services-grid">
             <div class="service-card" id="pickup">
                 <div class="service-icon">
-                    <img src="/image/pickup.jpg" alt="Pickup Icon">
+                    <img src="/image/rev_pickup logo.webp" alt="Pickup Icon">
                 </div>
                 <h3>Pick Up</h3>
                 <p>Foto sampah daur ulangmu, upload ke Aplikasi EcoWaste, kolektor EcoWaste terdekat akan menjemput, menimbang dan membayar sampahmu.</p>
             </div>
             <div class="service-card" id="dropoff">
                 <div class="service-icon">
-                    <img src="/image/dropoff.jpg" alt="Drop Off Icon">
+                    <img src="/image/rev_dropoff logo.webp" alt="Drop Off Icon">
                 </div>
                 <h3>Drop Off</h3>
                 <p>Antar langsung sampahmu ke Recycling Centre terdekat, kamu bisa mendaur ulang dengan ukuran kecil seperti satu botol plastik.</p>
             </div>
             <div class="service-card" id="company">
                 <div class="service-icon">
-                    <img src="/image/company.jpg" alt="Company Icon">
+                    <img src="/image/rev_company.png" alt="Company Icon">
                 </div>
                 <h3>Company</h3>
                 <p>Daur ulang berlangganan untuk bisnis dan kantor, menciptakan bisnis ramah lingkungan bukan sesuatu yang mahal lagi, dapatkan gratis di EcoWaste.</p>
             </div>
             <div class="service-card" id="event">
                 <div class="service-icon">
-                    <img src="/image/event.jpg" alt="Event Icon">
+                    <img src="/image/rev_event.jpg" alt="Event Icon">
                 </div>
                 <h3>Event</h3>
                 <p>Daftarkan eventmu di fitur ini untuk mengakses layanan daur ulang yang didesain khusus untuk event, atau layanan satu waktu.</p>
@@ -766,45 +775,65 @@
         </div>
         <div class="waste-grid">
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">📄</div>
                 <h3>Kertas</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">🧴</div>
                 <h3>Plastik</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">🔘</div>
                 <h3>Aluminium</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">🧲</div>
                 <h3>Besi & Logam</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">🔌</div>
                 <h3>Elektronik</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">🍾</div>
                 <h3>Botol Kaca</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">©️</div>
                 <h3>Merek</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">⚠️</div>
                 <h3>Khusus</h3>
+                </a>
             </div>
             <!-- New items for Kesehatan and Kaca -->
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">🩺</div>
                 <h3>Kesehatan</h3>
+                </a>
             </div>
             <div class="waste-item">
+                <a href="<?= base_url('') ?>" class="btn btn-light">
                 <div class="waste-icon">🍷</div>
                 <h3>Kaca</h3>
+                </a>
             </div>
         </div>
     </div>
