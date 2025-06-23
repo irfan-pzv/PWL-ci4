@@ -20,9 +20,6 @@
                 <p>
                     Layanan <strong>Company</strong> ditujukan untuk perusahaan, instansi, sekolah, atau lembaga yang ingin mengelola sampahnya secara bertanggung jawab dan berkelanjutan. Kami menyediakan sistem penjemputan berkala, pelaporan terintegrasi, dan pelatihan edukatif untuk karyawan.
                 </p>
-                <p>
-                    Layanan ini sangat sesuai untuk mendukung program CSR (Corporate Social Responsibility), pelaporan ESG, atau tujuan keberlanjutan perusahaan.
-                </p>
                 <p class="text-success">
                     Bersama kami, perusahaan Anda dapat menjadi bagian dari solusi lingkungan yang nyata.
                 </p>
