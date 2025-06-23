@@ -11,21 +11,18 @@
 
         <div class="row align-items-center">
             <div class="col-md-6 text-center">
-                <img src="<?= base_url('/image') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Aluminium">
+                <img src="<?= base_url('/image/aluminium.png') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Aluminium">
                 <p class="text-muted mt-2">Gambar: Contoh limbah Aluminium</p>
             </div>
             <div class="col-md-6">
                 <h4>Deskripsi</h4>
                 <p>
-                    desc
+                    Sampah aluminium biasanya berasal dari kaleng minuman, foil makanan, dan komponen logam ringan lainnya. Aluminium adalah bahan yang sangat bernilai dalam daur ulang karena bisa didaur ulang tanpa mengurangi kualitasnya.
                 </p>
                 <p>
-                    benefit
+                    Proses daur ulang aluminium menghemat hingga 95% energi dibandingkan produksi dari bahan mentah, dan sangat efektif dalam mengurangi limbah logam di lingkungan.
                 </p>
-                <ul>
-                    <li>poin1</li>
-                    <li>poin2</li>
-                </ul>
+                
             </div>
         </div>
 

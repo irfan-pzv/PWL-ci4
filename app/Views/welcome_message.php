@@ -6,6 +6,7 @@
     <meta name="description" content="Platform daur ulang untuk masa depan yang lebih hijau">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         * {
@@ -138,99 +139,85 @@
         
 
 /* Hero Section */
-.hero {
-    background: url('/public/image/heC:\xampp\htdocs\banksampah\public\image\heroes.jpgroes.jpg') no-repeat center center/cover;
-    padding: 100px 0;
-    color: white;
-}
-
-.hero-content {
-    display: flex;
-    align-items: left;
-    justify-content: flex-start; /* Agar teks di kiri */
-    flex-wrap: wrap;
-    gap: 40px;
-    padding-left: 40px; /* Memberi jarak kiri */
-}
-
-.hero-text {
-    flex: 1;
-    max-width: 600px;
-}
-
-.hero-text h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* Bayangan teks agar lebih terbaca */
-}
-
-.hero-text p {
-    font-size: 18px;
-    color: white;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.4); /* Bayangan teks */
-}
-
-
-.hero-button {
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: #21a747;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.hero-button:hover {
-    background-color: #199c3a;
-}
-
-.hero-image {
-    flex: 1;
-    max-width: 500px;
-}
-
-.hero-image img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-.hero-bg {
-    background: url('http://localhost/banksampah/public/image/heroes.jpg') no-repeat center center/cover;
-    padding: 140px 0;
-    color: white;
-    text-align: left;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.hero-button {
-    padding: 14px 32px;
-    background-color: #21a747;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-}
+        .hero {
+            background-color: #21a747;
+            color: white;
+            padding: 140px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-text h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .hero-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #21a747;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-right: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        
+        .cta-button.outline {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .cta-button.outline:hover {
+            background-color: white;
+            color: #21a747;
+        }
 
 
         
@@ -669,14 +656,23 @@
 
    <!-- Hero Section -->
 <!-- Hero Section -->
-<section id="hero" class="hero-bg">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h1>Inovasi untuk Masa Depan yang Lebih Bersih</h1>
-            <p>Kami hadir sebagai solusi terintegrasi dalam pengelolaan sampah, kolaborasi vendor, dan pengembangan usaha ramah lingkungan di Indonesia.</p>
+<section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Join Our Movement</h1>
+                    <h2>#ubahjadikebaikan</h2>
+                    <p>Bersama kita wujudkan Indonesia yang lebih bersih dengan solusi daur ulang yang inovatif dan berkelanjutan</p>
+                    <div class="hero-cta">
+                        <a href="<?= base_url('nasabah/register') ?>" class="cta-button outline">Daftar Sekarang</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/image/rev_hero.webp" alt="Hero Image">
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -689,7 +685,7 @@
         </div>
         <div class="about-content">
             <div class="about-image">
-                <img src="http://localhost/banksampah/public/image/tentangkami.png" alt="Tentang EcoWaste">
+                <img src="/image/tentangkami.png" alt="Tentang EcoWaste">
             </div>
             <div class="about-text">
                 <h3>Kami Adalah Jaringan Daur Ulang Digital</h3>
@@ -734,7 +730,7 @@
         </div>
         <div class="services-grid">
             <div class="service-card" id="pickup">
-                <a href="<?= base_url('') ?>" class="btn btn-light">
+                <a href="<?= base_url('layanan_lp/pickup') ?>" class="btn btn-light">
                 <div class="service-icon">
                     <img src="/image/rev_pickup logo.webp" alt="Pickup Icon">
                 </div>
@@ -743,7 +739,7 @@
                 </a>
             </div>
             <div class="service-card" id="dropoff">
-                <a href="<?= base_url('') ?>" class="btn btn-light">
+                <a href="<?= base_url('layanan_lp/dropoff') ?>" class="btn btn-light">
                 <div class="service-icon">
                     <img src="/image/rev_dropoff logo.webp" alt="Drop Off Icon">
                 </div>
@@ -752,7 +748,7 @@
                 </a>
             </div>
             <div class="service-card" id="company">
-                <a href="<?= base_url('') ?>" class="btn btn-light">
+                <a href="<?= base_url('layanan_lp/company') ?>" class="btn btn-light">
                 <div class="service-icon">
                     <img src="/image/rev_company.png" alt="Company Icon">
                 </div>
@@ -761,7 +757,7 @@
                 </a>
             </div>
             <div class="service-card" id="event">
-                <a href="<?= base_url('') ?>" class="btn btn-light">
+                <a href="<?= base_url('layanan_lp/event') ?>" class="btn btn-light">
                 <div class="service-icon">
                     <img src="/image/rev_event.jpg" alt="Event Icon">
                 </div>
@@ -772,7 +768,6 @@
         </div>
     </div>
 </section>
->
 
     <!-- Waste Types Section -->
     <section id="wastetypes" class="waste-types">
@@ -795,15 +790,9 @@
                 </a>
             </div>
             <div class="waste-item">
-                <a href="<?= base_url('sampah_lp/aluminium') ?>" class="btn btn-light">
-                <div class="waste-icon">🔘</div>
-                <h3>Aluminium</h3>
-                </a>
-            </div>
-            <div class="waste-item">
                 <a href="<?= base_url('sampah_lp/logam') ?>" class="btn btn-light">
                 <div class="waste-icon">🧲</div>
-                <h3>Besi & Logam</h3>
+                <h3>Logam</h3>
                 </a>
             </div>
             <div class="waste-item">
@@ -813,9 +802,16 @@
                 </a>
             </div>
             <div class="waste-item">
-                <a href="<?= base_url('sampah_lp/botol_kaca') ?>" class="btn btn-light">
+                <a href="<?= base_url('sampah_lp/kaca') ?>" class="btn btn-light">
                 <div class="waste-icon">🍾</div>
-                <h3>Botol Kaca</h3>
+                <h3>Kaca</h3>
+                </a>
+            </div>
+            <!--
+            <div class="waste-item">
+                <a href="<?= base_url('sampah_lp/aluminium') ?>" class="btn btn-light">
+                <div class="waste-icon">🔘</div>
+                <h3>Aluminium</h3>
                 </a>
             </div>
             <div class="waste-item">
@@ -830,7 +826,6 @@
                 <h3>Khusus</h3>
                 </a>
             </div>
-            <!-- New items for Kesehatan and Kaca -->
             <div class="waste-item">
                 <a href="<?= base_url('sampah_lp/kesehatan') ?>" class="btn btn-light">
                 <div class="waste-icon">🩺</div>
@@ -838,11 +833,12 @@
                 </a>
             </div>
             <div class="waste-item">
-                <a href="<?= base_url('sampah_lp/kaca') ?>" class="btn btn-light">
-                <div class="waste-icon">🍷</div>
-                <h3>Kaca</h3>
+                <a href="<?= base_url('sampah_lp/tekstil') ?>" class="btn btn-light">
+                <div class="waste-icon">👕</div>
+                <h3>Tekstil</h3>
                 </a>
             </div>
+    -->
         </div>
     </div>
 </section>

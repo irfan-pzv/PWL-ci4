@@ -8,24 +8,22 @@
 <body>
     <div class="container py-5">
         <h1 class="text-center mb-4">Jenis Sampah: Kaca</h1>
+        <br>
 
-        <div class="row align-items-center">
+        <div class="row align-items">
             <div class="col-md-6 text-center">
-                <img src="<?= base_url('/image') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Kaca">
+                <img src="<?= base_url('/image/kaca.jpg') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Kaca">
                 <p class="text-muted mt-2">Gambar: Contoh limbah kaca</p>
             </div>
             <div class="col-md-6">
                 <h4>Deskripsi</h4>
                 <p>
-                    desc
+                    Sampah kaca merupakan limbah dari bahan berbasis kaca seperti botol minuman, stoples kaca, atau serpihan kaca jendela. Kaca adalah material yang dapat didaur ulang tanpa kehilangan kualitasnya, sehingga sangat ramah lingkungan bila dikelola dengan benar.
                 </p>
                 <p>
-                    benefit
+                    Kaca daur ulang bisa digunakan kembali untuk membuat botol baru, bahan bangunan, isolasi, bahkan ubin dekoratif
                 </p>
-                <ul>
-                    <li>poin1</li>
-                    <li>poin2</li>
-                </ul>
+                
             </div>
         </div>
 

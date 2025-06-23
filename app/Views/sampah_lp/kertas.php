@@ -8,10 +8,11 @@
 <body>
     <div class="container py-5">
         <h1 class="text-center mb-4">Jenis Sampah: Kertas</h1>
+        <br>
 
-        <div class="row align-items-center">
+        <div class="row align-items">
             <div class="col-md-6 text-center">
-                <img src="<?= base_url('/image') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Kertas">
+                <img src="<?= base_url('/image/kertas.jpg') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Kertas">
                 <p class="text-muted mt-2">Gambar: Contoh limbah kertas</p>
             </div>
             <div class="col-md-6">
@@ -23,10 +24,7 @@
                 <p>
                     Daur ulang kertas membantu mengurangi penebangan pohon, menghemat energi, serta mengurangi volume sampah yang dikirim ke tempat pembuangan akhir.
                 </p>
-                <ul>
-                    <li>Bisa didaur ulang menjadi kertas daur ulang, tisu, atau karton.</li>
-                    <li>Jangan mencampur kertas dengan bahan lain seperti plastik atau minyak.</li>
-                </ul>
+                
             </div>
         </div>
 

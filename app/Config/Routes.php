@@ -8,16 +8,27 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/mitra', 'Home::getMitra');
 $routes->get('/blog', 'Home::getBlog');
-$routes->get('/sampah_lp/kertas', 'LpSampahController::kertas');
-$routes->get('/sampah_lp/plastik', 'LpSampahController::plastik');
-$routes->get('/sampah_lp/aluminium', 'LpSampahController::aluminium');
-$routes->get('/sampah_lp/logam', 'LpSampahController::logam');
-$routes->get('/sampah_lp/elektronik', 'LpSampahController::elektronik');
-$routes->get('/sampah_lp/botol_kaca', 'LpSampahController::botol_kaca');
-$routes->get('/sampah_lp/merek', 'LpSampahController::merek');
-$routes->get('/sampah_lp/khusus', 'LpSampahController::khusus');
-$routes->get('/sampah_lp/kesehatan', 'LpSampahController::kesehatan');
-$routes->get('/sampah_lp/kaca', 'LpSampahController::kaca');
+
+$routes->group('layanan_lp', function($routes){
+    $routes->get('pickup', 'LpLayananController::pickup');
+    $routes->get('dropoff', 'LpLayananController::dropoff');
+    $routes->get('company', 'LpLayananController::company');
+    $routes->get('event', 'LpLayananController::event');
+});
+
+$routes->group('sampah_lp', function ($routes) {
+    $routes->get('kertas', 'LpSampahController::kertas');
+    $routes->get('plastik', 'LpSampahController::plastik');
+    $routes->get('aluminium', 'LpSampahController::aluminium');
+    $routes->get('logam', 'LpSampahController::logam');
+    $routes->get('elektronik', 'LpSampahController::elektronik');
+    $routes->get('kaca', 'LpSampahController::kaca');
+    $routes->get('merek', 'LpSampahController::merek');
+    $routes->get('khusus', 'LpSampahController::khusus');
+    $routes->get('kesehatan', 'LpSampahController::kesehatan');
+    $routes->get('tekstil', 'LpSampahController::tekstil');
+});
+
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Auth');
 $routes->setDefaultMethod('login');

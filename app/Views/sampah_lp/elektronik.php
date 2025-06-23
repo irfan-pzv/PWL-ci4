@@ -8,24 +8,22 @@
 <body>
     <div class="container py-5">
         <h1 class="text-center mb-4">Jenis Sampah: Elektronik</h1>
+        <br>
 
-        <div class="row align-items-center">
+        <div class="row align-items">
             <div class="col-md-6 text-center">
-                <img src="<?= base_url('/image') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Elektronik">
+                <img src="<?= base_url('/image/elektronik.png') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Elektronik">
                 <p class="text-muted mt-2">Gambar: Contoh limbah elektronik</p>
             </div>
             <div class="col-md-6">
                 <h4>Deskripsi</h4>
                 <p>
-                    desc
+                    Sampah elektronik atau e-waste merupakan limbah dari perangkat elektronik yang sudah tidak digunakan atau rusak. Contohnya termasuk ponsel lama, laptop rusak, kabel, televisi, dan peralatan rumah tangga elektronik lainnya.
                 </p>
                 <p>
-                    benefit
+                    Sampah elektronik mengandung bahan berbahaya seperti merkuri dan timbal, sehingga pengelolaan yang tepat sangat penting untuk menghindari pencemaran lingkungan. Beberapa komponennya juga masih dapat dimanfaatkan kembali atau didaur ulang.
                 </p>
-                <ul>
-                    <li>poin1</li>
-                    <li>poin2</li>
-                </ul>
+                
             </div>
         </div>
 

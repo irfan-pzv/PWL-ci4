@@ -8,24 +8,22 @@
 <body>
     <div class="container py-5">
         <h1 class="text-center mb-4">Jenis Sampah: Plastik</h1>
+        <br>
 
-        <div class="row align-items-center">
+        <div class="row align-items">
             <div class="col-md-6 text-center">
-                <img src="<?= base_url('/image') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Plastik">
+                <img src="<?= base_url('/image/plastik.jpg') ?>" class="img-fluid rounded shadow" alt="Contoh Sampah Plastik">
                 <p class="text-muted mt-2">Gambar: Contoh limbah plastik</p>
             </div>
             <div class="col-md-6">
                 <h4>Deskripsi</h4>
                 <p>
-                    desc
+                    Sampah plastik merupakan jenis sampah anorganik yang sulit terurai secara alami. Umumnya berasal dari botol plastik, kantong kresek, kemasan makanan/minuman, dan barang rumah tangga plastik lainnya.
                 </p>
                 <p>
-                    benefit
+                    Daur ulang plastik dapat membantu mengurangi pencemaran tanah dan air, serta menghemat sumber daya alam.
                 </p>
-                <ul>
-                    <li>poin1</li>
-                    <li>poin2</li>
-                </ul>
+                
             </div>
         </div>
 

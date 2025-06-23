@@ -24,9 +24,9 @@ class LpSampahController extends BaseController
     {
         return view('sampah_lp/elektronik');
     }
-    public function botol_kaca()
+    public function kaca()
     {
-        return view('sampah_lp/botol_kaca');
+        return view('sampah_lp/kaca');
     }
     public function merek()
     {
@@ -40,8 +40,8 @@ class LpSampahController extends BaseController
     {
         return view('sampah_lp/kesehatan');
     }
-    public function kaca()
+    public function tekstil()
     {
-        return view('sampah_lp/kaca');
+        return view('sampah_lp/tekstil');
     }
 }

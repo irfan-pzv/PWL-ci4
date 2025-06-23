@@ -22,10 +22,7 @@
                 <p>
                     benefit
                 </p>
-                <ul>
-                    <li>poin1</li>
-                    <li>poin2</li>
-                </ul>
+                
             </div>
         </div>
 
