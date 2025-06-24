@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <style>
         * {
@@ -883,10 +885,10 @@
                     <h3>EcoWaste</h3>
                     <p>Platform daur ulang untuk Indonesia yang lebih bersih dan berkelanjutan.</p>
                     <div class="social-icons">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Twitter">t</a>
-                        <a href="#" aria-label="Instagram">i</a>
-                        <a href="#" aria-label="LinkedIn">l</a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -911,7 +913,7 @@
                 <div class="footer-column">
                     <h3>Kontak</h3>
                     <ul class="footer-links">
-                        <li>Email: belum ada</li>
+                        <li>Email: ecowaste@gmail.com</li>
                         <li>Telepon: +62 87 820 434 943</li>
                         <li>JL.Borobudur Utara X1 no 19</li>
                     </ul>
@@ -924,7 +926,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu toggle
             const menuToggle = document.querySelector('.menu-toggle');
