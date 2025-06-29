@@ -749,7 +749,7 @@
                 <div class="mitra-logo">
                     <img src="http://localhost/banksampah/public/image/udinus.jpg" alt="Logo Pendidikan">
                 </div>
-                <h3>Universitas Dianuswantoro</h3>
+                <h3>Universitas Dian Nuswantoro</h3>
                 <p>Pengembangan Sistem TeknoligI terbaharukan Pengolahan Sampah </p>
             </div>
 
@@ -762,13 +762,7 @@
             </div>
         </div>
         
-        <div class="mitra-cta">
-    <div class="mitra-cta-content">
-        <div class="cta-icon">🌿</div>
-        <h3>Tertarik menjadi mitra <span>EcoWaste?</span></h3>
-        <p>Bergabunglah bersama kami mewujudkan Indonesia yang lebih bersih dan berkelanjutan.</p>
-        <a href="#contact" class="cta-button">Hubungi Kami</a>
-    </div>
+        
 </div>
 
 
@@ -859,86 +853,7 @@
         line-height: 1.5;
     }
     
-    .mitra-cta {
-        text-align: center;
-        margin-top: 60px;
-        padding: 40px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    }
     
-    .mitra-cta h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
-        color: #333;
-    }
-    
-    .mitra-cta p {
-        font-size: 16px;
-        color: #666;
-        margin-bottom: 25px;
-    }
-    
-    .mitra-cta .cta-button {
-        background-color: #21a747;
-        color: white;
-    }
-    .mitra-cta {
-    text-align: center;
-    margin-top: 60px;
-    padding: 50px 30px;
-    background: linear-gradient(135deg, #21a747, #139c3a);
-    color: white;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    overflow: hidden;
-}
-
-.mitra-cta-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.mitra-cta .cta-icon {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.mitra-cta h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.mitra-cta h3 span {
-    color: #ffe600;
-}
-
-.mitra-cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    color: #f0f0f0;
-}
-
-.mitra-cta .cta-button {
-    background-color: #ffe600;
-    color: #333;
-    padding: 14px 36px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-    display: inline-block;
-}
-
-.mitra-cta .cta-button:hover {
-    background-color: #ffffff;
-    color: #21a747;
-}
 
     /* Responsive adjustments */
     @media (max-width: 768px) {

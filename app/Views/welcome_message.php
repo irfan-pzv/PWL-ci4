@@ -450,25 +450,88 @@
         }
         
         /* CTA Section */
-        .cta {
-            padding: 100px 0;
-            background-color: #21a747;
-            color: white;
-            text-align: center;
-        }
         
-        .cta h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
         
-        .cta p {
-            font-size: 18px;
-            margin-bottom: 40px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        .mitra-cta {
+        text-align: center;
+        margin-top: 60px;
+        padding: 40px;
+        background-color: white;
+        
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    
+    .mitra-cta h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    
+    .mitra-cta p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 25px;
+    }
+    
+    .mitra-cta .cta-button {
+        background-color: #21a747;
+        color: white;
+    }
+    .mitra-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding: 50px 30px;
+    background: linear-gradient(135deg, #21a747, #139c3a);
+    color: white;
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.mitra-cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mitra-cta .cta-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.mitra-cta h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.mitra-cta h3 span {
+    color: #ffe600;
+}
+
+.mitra-cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.mitra-cta .cta-button {
+    background-color: #ffe600;
+    color: #333;
+    padding: 14px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.mitra-cta .cta-button:hover {
+    background-color: #ffffff;
+    color: #21a747;
+}
         
         /* Footer */
         footer {
@@ -631,7 +694,7 @@
         <div class="container">
             <div class="nav-container">
                 <a href="#" class="logo">
-                <img src="http://localhost/banksampah/public/image/ecowaste.png" alt="Logo"> EcoWaste
+                <img src="<?= base_url('http://localhost/banksampah/public/image/ecowaste.png') ?>" alt="Logo"> EcoWaste
                 </a>
                 <nav>
                     <ul class="main-nav">
@@ -666,11 +729,11 @@
                     <h2>#ubahjadikebaikan</h2>
                     <p>Bersama kita wujudkan Indonesia yang lebih bersih dengan solusi daur ulang yang inovatif dan berkelanjutan</p>
                     <div class="hero-cta">
-                        <a href="<?= base_url('nasabah/register') ?>" class="cta-button outline">Daftar Sekarang</a>
+                        <a href="https://wa.me/6282329728853" target="_blank" class="cta-button outline">Daftar Sekarang</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="/image/rev_hero.webp" alt="Hero Image">
+                    <img src="<?= base_url('image/rev_hero.webp') ?>" alt="Hero Image">
                 </div>
             </div>
         </div>
@@ -687,7 +750,7 @@
         </div>
         <div class="about-content">
             <div class="about-image">
-                <img src="/image/tentangkami.png" alt="Tentang EcoWaste">
+                <img src="<?= base_url('image/tentangkami.png') ?>" alt="Tentang EcoWaste">
             </div>
             <div class="about-text">
                 <h3>Kami Adalah Jaringan Daur Ulang Digital</h3>
@@ -734,7 +797,7 @@
             <div class="service-card" id="pickup">
                 <a href="<?= base_url('layanan_lp/pickup') ?>" class="btn btn-light">
                 <div class="service-icon">
-                    <img src="/image/rev_pickup logo.webp" alt="Pickup Icon">
+                    <img src="<?= base_url('image/rev_pickup logo.webp') ?>" alt="Pickup Icon">
                 </div>
                 <h3>Pick Up</h3>
                 <p>Foto sampah daur ulangmu, upload ke Aplikasi EcoWaste, kolektor EcoWaste terdekat akan menjemput, menimbang dan membayar sampahmu.</p>
@@ -743,7 +806,7 @@
             <div class="service-card" id="dropoff">
                 <a href="<?= base_url('layanan_lp/dropoff') ?>" class="btn btn-light">
                 <div class="service-icon">
-                    <img src="/image/rev_dropoff logo.webp" alt="Drop Off Icon">
+                    <img src="<?= base_url('image/rev_dropoff logo.webp') ?>" alt="Drop Off Icon">
                 </div>
                 <h3>Drop Off</h3>
                 <p>Antar langsung sampahmu ke Recycling Centre terdekat, kamu bisa mendaur ulang dengan ukuran kecil seperti satu botol plastik.</p>
@@ -752,7 +815,7 @@
             <div class="service-card" id="company">
                 <a href="<?= base_url('layanan_lp/company') ?>" class="btn btn-light">
                 <div class="service-icon">
-                    <img src="/image/rev_company.png" alt="Company Icon">
+                    <img src="<?= base_url('image/rev_company.png') ?>" alt="Company Icon">
                 </div>
                 <h3>Company</h3>
                 <p>Daur ulang berlangganan untuk bisnis dan kantor, menciptakan bisnis ramah lingkungan bukan sesuatu yang mahal lagi, dapatkan gratis di EcoWaste.</p>
@@ -761,7 +824,7 @@
             <div class="service-card" id="event">
                 <a href="<?= base_url('layanan_lp/event') ?>" class="btn btn-light">
                 <div class="service-icon">
-                    <img src="/image/rev_event.jpg" alt="Event Icon">
+                    <img src="<?= base_url('image/rev_event.jpg') ?>" alt="Event Icon">
                 </div>
                 <h3>Event</h3>
                 <p>Daftarkan eventmu di fitur ini untuk mengakses layanan daur ulang yang didesain khusus untuk event, atau layanan satu waktu.</p>
@@ -861,7 +924,7 @@
                 
             </div>
             <div class="solution-image">
-                <img src="/image/solution.png" alt="Our Solution">
+                <img src="<?= base_url('image/solution.png') ?>" alt="Our Solution">
             </div>
         </div>
     </div>
@@ -870,11 +933,13 @@
 
     <!-- CTA Section -->
     <section class="cta">
-        <div class="container">
-            <h2>Bergabunglah dengan Gerakan Kami</h2>
-            <p>Mari bersama mewujudkan Indonesia yang lebih bersih dan berkelanjutan untuk generasi mendatang melalui solusi daur ulang yang inovatif</p>
-            
-        </div>
+        <div class="mitra-cta">
+    <div class="mitra-cta-content">
+        <div class="cta-icon">🌿</div>
+        <h3>Tertarik menjadi mitra <span>EcoWaste?</span></h3>
+        <p>Bergabunglah bersama kami mewujudkan Indonesia yang lebih bersih dan berkelanjutan.</p>
+        <a href="https://wa.me/6282329728853" target="_blank" class="cta-button outline">Daftar Sekarang</a>
+    </div>
     </section>
 
   <!-- Footer -->
@@ -926,7 +991,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    <script src="<?= base_url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js') ?>" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu toggle
             const menuToggle = document.querySelector('.menu-toggle');
