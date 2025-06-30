@@ -552,13 +552,13 @@
                     <ul class="main-nav">
                         <li><a href="/">Tentang Kami</a></li>
                         <li class="dropdown">
-                            <a href="#services">Layanan</a>
+                            <a href="/#services">Layanan</a>
                         </li>
                         <li class="dropdown">
-                            <a href="/">Solusi Kami</a>
+                            <a href="/#solutions">Solusi Kami</a>
                         </li>
                         <li><a href="/">Beranda</a></li>
-                        <li><a href="/blog">Mitra</a></li>
+                        <li><a href="/mitra">Mitra</a></li>
                         <li><a href="<?= base_url('nasabah/login') ?>">Login</a></li>
                     </ul>
                 </nav>

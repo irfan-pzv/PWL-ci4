@@ -707,7 +707,7 @@
 
                         </li>
                         <li><a href="<?= base_url('/mitra') ?>">Mitra</a></li>
-                        <li><a href="<?= base_url('/mitra') ?>">Blog</a></li>
+                        <li><a href="<?= base_url('/blog') ?>">Blog</a></li>
                         <li><a href="<?= base_url('nasabah/login') ?>">Login</a></li>
 
                     </ul>
