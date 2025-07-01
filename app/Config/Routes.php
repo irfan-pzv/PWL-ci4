@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/mitra', 'Home::getMitra');
 $routes->get('/blog', 'Home::getBlog');
+$routes->get('/indexkopok', 'Home::indexkopok');
 
 $routes->group('layanan_lp', function($routes){
     $routes->get('pickup', 'LpLayananController::pickup');

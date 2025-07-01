@@ -921,7 +921,7 @@
                 <div class="footer-column">
                     <h3>Kontak</h3>
                     <ul class="footer-links">
-                        <li>Email: belum ada</li>
+                        <li>Email: ecowaste@gmail.com</li>
                         <li>Telepon: +62 87 820 434 943</li>
                         <li>JL.Borobudur Utara X1 no 19</li>
                     </ul>

@@ -17,4 +17,8 @@ class Home extends BaseController
     {
         return view('blog'); 
     }
+    public function indexkopok()
+    {
+        return view('indexkopok'); 
+    }
 }

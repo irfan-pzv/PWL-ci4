@@ -142,7 +142,10 @@
 
 /* Hero Section */
         .hero {
-            background-color: #21a747;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('image/hero3.jpg');
+            background-size: cover;
+            background-position: center;
+            /*background-color: #21a747;*/
             color: white;
             padding: 140px 0 80px;
             position: relative;
@@ -189,7 +192,7 @@
         .hero-image img {
             max-width: 100%;
             border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            /*box-shadow: 0 10px 30px rgba(0,0,0,0.15);*/
         }
         
         .cta-button {
@@ -694,7 +697,7 @@
         <div class="container">
             <div class="nav-container">
                 <a href="#" class="logo">
-                <img src="<?= base_url('http://localhost/banksampah/public/image/ecowaste.png') ?>" alt="Logo"> EcoWaste
+                <img src="<?= base_url('image/ecowaste.png') ?>" alt="Logo"> EcoWaste
                 </a>
                 <nav>
                     <ul class="main-nav">
@@ -729,11 +732,11 @@
                     <h2>#ubahjadikebaikan</h2>
                     <p>Bersama kita wujudkan Indonesia yang lebih bersih dengan solusi daur ulang yang inovatif dan berkelanjutan</p>
                     <div class="hero-cta">
-                        <a href="https://wa.me/6282329728853" target="_blank" class="cta-button outline">Daftar Sekarang</a>
+                        <a href="<?= base_url('indexkopok') ?>" target="_blank" class="cta-button outline">Daftar Sekarang</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="<?= base_url('image/rev_hero.webp') ?>" alt="Hero Image">
+                    <img src="<?= base_url('image/hero4.jpg') ?>" alt="Hero Image">
                 </div>
             </div>
         </div>
@@ -932,7 +935,7 @@
 
 
     <!-- CTA Section -->
-    <section class="cta">
+    <!--<section class="cta">
         <div class="mitra-cta">
     <div class="mitra-cta-content">
         <div class="cta-icon">🌿</div>
@@ -940,7 +943,7 @@
         <p>Bergabunglah bersama kami mewujudkan Indonesia yang lebih bersih dan berkelanjutan.</p>
         <a href="https://wa.me/6282329728853" target="_blank" class="cta-button outline">Daftar Sekarang</a>
     </div>
-    </section>
+    </section>-->
 
   <!-- Footer -->
   <footer id="contact">
