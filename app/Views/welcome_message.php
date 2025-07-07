@@ -11,6 +11,18 @@
 
 
     <style>
+
+        .main-nav {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-nav li {
+            margin-left: 20px;
+        }
+
         * {
             transition: background-color 300ms ease, color 300ms ease;
             margin: 0;
@@ -713,7 +725,7 @@
                         <li><a href="<?= base_url('/blog') ?>">Blog</a></li>
                         <li><a href="<?= base_url('nasabah/login') ?>">Login</a></li>
 
-                    </ul>
+                    <li style="margin-left: 80px"><a href="#pricing">♻️ Ayo menabung: mulai dari Rp 500-an/kg!</a></li></ul>
                 </nav>
                 <div class="menu-toggle">
                     <span>&#9776;</span>
@@ -946,7 +958,36 @@
     </section>-->
 
   <!-- Footer -->
-  <footer id="contact">
+  <section id="pricing" style="padding: 60px 20px; background: #f9f9f9;">
+  <h2 style="text-align: center;">Harga Sampah Hari Ini</h2>
+  <p style="text-align: center; max-width: 600px; margin: 0 auto; color : #555 ;">
+    Tukarkan sampahmu dengan uang! ♻️ Berikut daftar harga per kilogram:
+  </p>
+  <div style="max-width: 800px; margin: 30px auto;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead style="background:rgb(38, 169, 75); color: white;">
+        <tr>
+          <th style="padding: 10px;">Kategori</th>
+          <th>Jenis Sampah</th>
+          <th>Harga/Kg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Organik</td><td>Kompos</td><td>Rp 500</td></tr>
+        <tr><td>Anorganik</td><td>Botol Plastik PET</td><td>Rp 2.000</td></tr>
+        <tr><td>Anorganik</td><td>Kardus/Karton</td><td>Rp 1.800</td></tr>
+        <tr><td>Anorganik</td><td>Kaleng Aluminium</td><td>Rp 4.500</td></tr>
+        <tr><td>Anorganik</td><td>Kaca Bening</td><td>Rp 500</td></tr>
+        <tr><td>Elektronik</td><td>HP Bekas</td><td>Rp 10.000</td></tr>
+        <tr><td>Elektronik</td><td>Kabel Tembaga</td><td>Rp 20.000</td></tr>
+        <tr><td>Lainnya</td><td>Minyak Jelantah</td><td>Rp 5.000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  
+</section>
+
+<footer id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
@@ -1037,3 +1078,4 @@
             });
         });
         </script>
+
